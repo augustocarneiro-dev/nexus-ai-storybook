@@ -1,0 +1,70 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="NEXUS AI/Glossário Técnico" />
+
+<style>
+  {`
+    .glossary-container { font-family: 'Nunito Sans', sans-serif; color: #1e293b; padding: 20px; }
+    .term-card { 
+      background: #ffffff; 
+      padding: 15px; 
+      border-radius: 8px; 
+      border-left: 4px solid #38bdf8; 
+      margin-bottom: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .term-title { color: #0f172a; font-weight: 800; margin-bottom: 5px; display: block; font-size: 16px; }
+    .term-tag {
+      font-size: 10px;
+      text-transform: uppercase;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 8px;
+      color: #64748b;
+    }
+  `}
+</style>
+
+<div className="glossary-container">
+
+# Glossário Técnico Nexus AI 📚
+
+Este guia define os conceitos fundamentais explorados durante o desenvolvimento da plataforma, servindo como base teórica para a implementação da IA corporativa.
+
+<div className="term-card" style={{borderLeftColor: '#f6f206'}}>
+  <span className="term-title">LLM (Large Language Model) <span className="term-tag">Base</span></span>
+  <p style={{fontSize: '14px', margin: 0}}>Modelos de linguagem de larga escala (como GPT-4) treinados em trilhões de palavras para entender e gerar texto humano.</p>
+</div>
+
+<div className="term-card" style={{borderLeftColor: '#38bdf8'}}>
+  <span className="term-title">RAG (Retrieval-Augmented Generation) <span className="term-tag">Capítulo 2</span></span>
+  <p style={{fontSize: '14px', margin: 0}}>Arquitetura que permite à IA consultar uma base de dados externa em tempo real antes de responder, reduzindo erros.</p>
+</div>
+
+<div className="term-card" style={{borderLeftColor: '#4ade80'}}>
+  <span className="term-title">Ciclo ReAct (Reason + Act) <span className="term-tag">Capítulo 3</span></span>
+  <p style={{fontSize: '14px', margin: 0}}>Metodologia de raciocínio onde a IA planeja uma ação, executa uma ferramenta e observa o resultado antes de concluir.</p>
+</div>
+
+<div className="term-card" style={{borderLeftColor: '#f59e0b'}}>
+  <span className="term-title">Fine-Tuning <span className="term-tag">Capítulo 4</span></span>
+  <p style={{fontSize: '14px', margin: 0}}>Processo de especialização onde o modelo base é treinado com dados específicos para aprender um novo jargão ou tom de voz.</p>
+</div>
+
+<div className="term-card" style={{borderLeftColor: '#ef4444'}}>
+  <span className="term-title">Guardrails & Prompt Injection <span className="term-tag">Capítulo 5</span></span>
+  <p style={{fontSize: '14px', margin: 0}}>Sistemas de segurança que filtram entradas maliciosas (tentativas de burlar as regras da IA) e garantem respostas éticas.</p>
+</div>
+
+<div className="term-card" style={{borderLeftColor: '#8b5cf6'}}>
+  <span className="term-title">Alucinação (Hallucination) <span className="term-tag">Governança</span></span>
+  <p style={{fontSize: '14px', margin: 0}}>Fenômeno onde a IA gera informações factualmente incorretas. Combatido no projeto através de validação cruzada com RAG.</p>
+</div>
+
+<div className="term-card" style={{borderLeftColor: '#06b6d4'}}>
+  <span className="term-title">LGPD (Lei Geral de Proteção de Dados) <span className="term-tag">Conformidade</span></span>
+  <p style={{fontSize: '14px', margin: 0}}>Marco regulatório brasileiro que guia as práticas de privacidade e anonimização (PII Masking) demonstradas no Capítulo 5.</p>
+</div>
+
+</div>

@@ -1,0 +1,180 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="NEXUS AI/Capítulo 4: Ajuste Fino" />
+
+<style>
+  {`
+    .nexus-container {
+      font-family: 'Nunito Sans', sans-serif;
+      color: #1e293b;
+    }
+    .comparison-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 30px 0;
+    }
+    .card {
+      padding: 24px;
+      border-radius: 16px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      transition: transform 0.2s;
+    }
+    .card-base { border-top: 4px solid #94a3b8; }
+    .card-tuned { 
+      border-top: 4px solid #10b981; 
+      box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.1);
+      background: linear-gradient(to bottom right, #ffffff, #f0fdf4);
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .tag-base { background: #f1f5f9; color: #64748b; }
+    .tag-tuned { background: #dcfce7; color: #15803d; }
+    
+    /* Nova Matrix Estilizada */
+    .matrix-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .matrix-item {
+      padding: 16px;
+      background: #f8fafc;
+      border-radius: 12px;
+      border-left: 4px solid #3b82f6;
+    }
+    .matrix-title { font-weight: bold; font-size: 14px; display: block; margin-bottom: 4px; }
+    .matrix-desc { font-size: 12px; color: #64748b; }
+  `}
+</style>
+
+<div className="nexus-container">
+
+# Capítulo 4: Ajuste Fino (Fine-Tuning) 🧠
+
+Enquanto o **RAG** funciona como um livro de consultas, o **Fine-Tuning** é o treinamento intensivo que molda a personalidade e a especialização da IA.
+
+### ⚖️ O Confronto: Generalista vs. Especialista
+
+<div className="comparison-wrapper">
+  <div className="card card-base">
+    <span className="tag tag-base">Modelo Base</span>
+    <p style={{fontWeight: 'bold', fontSize: '14px'}}>"O que é um Nexus?"</p>
+    <p style={{fontSize: '13px', color: '#64748b'}}>
+      "Nexus é um termo genérico para conexão ou ligação. Pode referir-se a centros logísticos ou conceitos abstratos..."
+    </p>
+  </div>
+
+  <div className="card card-tuned">
+    <span className="tag tag-tuned">Nexus AI Tuned</span>
+    <p style={{fontWeight: 'bold', fontSize: '14px'}}>"O que é um Nexus?"</p>
+    <p style={{fontSize: '13px', color: '#065f46'}}>
+      "O Nexus é a nossa arquitetura proprietária de IA. Ele combina processamento neural com segurança de dados corporativos..."
+    </p>
+  </div>
+</div>
+
+## 📊 Matriz de Decisão Estratégica
+
+Em vez de tabelas simples, veja os pilares de escolha da **Nexus AI**:
+
+<div className="matrix-grid">
+  <div className="matrix-item" style={{borderColor: '#3b82f6'}}>
+    <span className="matrix-title">Conhecimento Dinâmico</span>
+    <span className="matrix-desc">Use **RAG** para dados que mudam todo dia (notícias, estoque).</span>
+  </div>
+  <div className="matrix-item" style={{borderColor: '#10b981'}}>
+    <span className="matrix-title">Domínio de Linguagem</span>
+    <span className="matrix-desc">Use **Fine-Tuning** para jargões médicos, jurídicos ou tom de voz de marca.</span>
+  </div>
+  <div className="matrix-item" style={{borderColor: '#f59e0b'}}>
+    <span className="matrix-title">Custo e Escala</span>
+    <span className="matrix-desc">O RAG é mais barato para começar; o Fine-Tuning exige investimento em GPU.</span>
+  </div>
+</div>
+
+---
+
+## 💰 Economia da IA: RAG vs. Fine-Tuning
+
+A escolha técnica impacta diretamente no orçamento do projeto. Veja a comparação de recursos:
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '20px'}}>
+  <div style={{padding: '20px', background: '#f8fafc', borderRadius: '15px', border: '1px solid #e2e8f0'}}>
+    <h4 style={{margin: '0 0 10px 0', color: '#334155'}}>RAG (Baixo Custo Inicial)</h4>
+    <ul style={{fontSize: '13px', color: '#64748b', paddingLeft: '20px'}}>
+      <li><strong>Setup:</strong> Quase zero (uso de APIs).</li>
+      <li><strong>Inferência:</strong> Mais cara (tokens extras de contexto).</li>
+      <li><strong>Ideal para:</strong> Projetos em validação e MVPs.</li>
+    </ul>
+  </div>
+
+  <div style={{padding: '20px', background: '#f0f9ff', borderRadius: '15px', border: '1px solid #bae6fd'}}>
+    <h4 style={{margin: '0 0 10px 0', color: '#0369a1'}}>Fine-Tuning (Investimento em Eficiência)</h4>
+    <ul style={{fontSize: '13px', color: '#0369a1', paddingLeft: '20px'}}>
+      <li><strong>Setup:</strong> Alto (Custo de GPU e Curadoria).</li>
+      <li><strong>Inferência:</strong> Mais barata (Prompts curtos e precisos).</li>
+      <li><strong>Ideal para:</strong> Operações em larga escala e alta performance.</li>
+    </ul>
+  </div>
+</div>
+
+<div style={{marginTop: '25px', padding: '15px', background: '#fffbeb', borderRadius: '12px', border: '1px solid #fde68a', display: 'flex', alignItems: 'center', gap: '15px'}}>
+  <span style={{fontSize: '24px'}}>💡</span>
+  <p style={{fontSize: '13px', color: '#92400e', margin: 0}}>
+    <strong>Insight Estratégico:</strong> Para a <strong>Nexus AI</strong>, o Fine-Tuning reduz a latência em até 40% ao eliminar a necessidade de instruções longas no prompt, economizando milhares de dólares em escala anual.
+  </p>
+</div>
+
+---
+
+> **Dica da Nexus:** A verdadeira "mágica" acontece na união dos dois. Um modelo ajustado para ser educado (Fine-Tuning) que consulta manuais técnicos em tempo real (RAG).
+
+</div>
+
+---
+
+## 🏗️ O Ciclo de Especialização
+
+Para chegar ao nível de precisão da **Nexus AI**, seguimos três etapas rigorosas:
+
+<div style={{display: 'flex', gap: '15px', marginTop: '20px'}}>
+  <div style={{flex: 1, padding: '15px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '12px'}}>
+    <strong style={{color: '#3b82f6'}}>1. Curadoria 📚</strong>
+    <p style={{fontSize: '12px', color: '#64748b'}}>Seleção de 500+ exemplos de diálogos ideais seguindo a cultura da empresa.</p>
+  </div>
+  <div style={{flex: 1, padding: '15px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '12px'}}>
+    <strong style={{color: '#10b981'}}>2. Treinamento ⚡</strong>
+    <p style={{fontSize: '12px', color: '#64748b'}}>O modelo processa os dados (Fine-Tuning) para ajustar seus pesos neurais.</p>
+  </div>
+  <div style={{flex: 1, padding: '15px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '12px'}}>
+    <strong style={{color: '#f59e0b'}}>3. Validação ✅</strong>
+    <p style={{fontSize: '12px', color: '#64748b'}}>Testes de segurança e tom de voz antes da implantação oficial.</p>
+  </div>
+</div>
+
+---
+
+### 🤖 Saída Estruturada (JSON Mode)
+Um dos maiores benefícios do Fine-Tuning é a capacidade de responder em formatos que sistemas de TI entendem perfeitamente:
+
+<div style={{background: '#1e293b', color: '#f8fafc', padding: '20px', borderRadius: '12px', fontFamily: 'monospace', fontSize: '13px', marginTop: '15px'}}>
+  <span style={{color: '#94a3b8'}}>// Resposta da Nexus AI para um sistema de inventário</span><br/>
+  {`{`} <br/>
+  &nbsp;&nbsp;"status": <span style={{color: '#4ade80'}}>"sucesso"</span>, <br/>
+  &nbsp;&nbsp;"entidade": <span style={{color: '#4ade80'}}>"Nexus_Core_V1"</span>, <br/>
+  &nbsp;&nbsp;"confianca": <span style={{color: '#fbbf24'}}>0.99</span>, <br/>
+  &nbsp;&nbsp;"acao_recomendada": <span style={{color: '#4ade80'}}>"ativar_agente_suporte"</span> <br/>
+  {`}`}
+</div>
+
+---

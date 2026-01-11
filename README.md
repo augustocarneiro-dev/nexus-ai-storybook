@@ -1,16 +1,18 @@
-# React + Vite
+# 🛡️ Nexus AI: Jornada de IA Corporativa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Nexus AI** é uma plataforma interativa desenvolvida no Storybook que demonstra o ciclo completo de implementação de IA em empresas, focando em segurança e eficiência.
 
-Currently, two official plugins are available:
+## 🔗 Links Oficiais
+- **Projeto Online (AWS Amplify):** https://prod.d345qw5t9hkgey.amplifyapp.com
+- **Repositório GitHub:** https://github.com/augustocarneiro-dev/nexus-ai-storybook
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Estrutura da Jornada
+- **Cap 1: Fundamentos:** Arquitetura básica e conceitos.
+- **Cap 2: RAG:** Recuperação de dados externos para evitar alucinações.
+- **Cap 3: Agentes:** Automação de tarefas reais com o ciclo ReAct.
+- **Cap 4: Fine-Tuning:** Especialização de modelos e análise de ROI.
+- **Cap 5: Segurança:** Proteção de dados (PII Masking) e Governança (LGPD).
+- **Glossário Técnico:** Base teórica completa do projeto.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologias
+React, MDX, Storybook, AWS Amplify, CSS Moderno.
